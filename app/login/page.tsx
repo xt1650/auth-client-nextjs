@@ -15,14 +15,6 @@ export default function Login() {
     console.log(event.target.name)
     console.log(process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET)
     console.log(process.env.GOOGLE_CLIENT_ID)
-
-    axios.post("/account/register",{
-      email:"username",
-      password:"password"
-    }).then((response) => {
-      console.log(response);
-    }) .catch((error) => console.log(error));
-    
     // signIn(event.target.name
     // //   , 
     // //   {
